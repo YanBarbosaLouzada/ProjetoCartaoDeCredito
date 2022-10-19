@@ -1,0 +1,51 @@
+<div class="form-group">
+    <label>Número do cartão</label>
+    <input type="text" placeholder="Nome do cartão" [(ngModel)]="nomeCartao" name="valor1">
+    <input type="text" placeholder="Número do cartão" [(ngModel)]="numeroCartao" name="valor2">
+    <input type="text" placeholder="CVV" [(ngModel)]="cvc" name="valor3">
+    <input type="text" placeholder="Mês" [(ngModel)]="mes" name="valor4">
+    <input type="text" placeholder="Ano" [(ngModel)]="ano" name="valor5">
+
+    <button type="button">Confirmar</button>
+</div>
+<div class="container">
+    <div class="Fundo">
+
+        <div class="front-card">
+            <div><img
+                    src="https://media-exp1.licdn.com/dms/image/C560BAQHMnA03XDdf3w/company-logo_200_200/0/1519855918965?e=2147483647&v=beta&t=J3kUMZwIphc90TFKH5oOO9Sa9K59fimgJf-s_okU3zs"
+                    alt="..." class="card-img">
+            </div>
+            <div class="corpo">
+                <p class="numeroCartao">{{numeroCartao}}</p>
+            </div>
+
+            <div class="fotter">
+                <div class="nome">
+                    <p class="nomeCartao">{{nomeCartao}}</p>
+                </div>
+
+                <div class="vencimento">
+                    <p>{{mes}} / {{ano}}</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="back-card">
+            <section class="tarja"></section>
+            <div class="verse">
+                <p>{{cvc}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- <input type="number" placeholder="Digite o 1° número"[(ngModel)]="n1"name="valor1">
+<input type="number" placeholder="Digite o 2° número"[(ngModel)]="n2"name="valor2">
+<input type="number" [(ngModel)]="n2"name="valor2"> -->
+
+<!-- <p> {{n1}} + {{n2}} = {{n1+n2}} </p> -->
